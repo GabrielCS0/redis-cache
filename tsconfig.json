@@ -16,9 +16,6 @@
     "experimentalDecorators": true,              
     "emitDecoratorMetadata": true,                
     "skipLibCheck": true,                       
-    "forceConsistentCasingInFileNames": true,    
-  },
-  "include": [
-    "src/*"
-  ]
+    "forceConsistentCasingInFileNames": true
+  }
 }

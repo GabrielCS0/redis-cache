@@ -8,6 +8,9 @@ declare namespace NodeJS {
     POSTGRES_PASS: string
     POSTGRES_PORT: number
 
+    REDIS_PASS: string
+    REDIS_PORT: number
+
     SECRET_HASH_KEY: string
     JWT_SECRET: string
   }

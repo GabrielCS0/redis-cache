@@ -9,5 +9,6 @@ declare namespace NodeJS {
     POSTGRES_PORT: number
 
     SECRET_HASH_KEY: string
+    JWT_SECRET: string
   }
 }

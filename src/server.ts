@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import './database/postgres'
+import './infra/postgres'
 import express from 'express'
 import { router } from './routes'
 

@@ -1,4 +1,4 @@
-import { createConnection } from '../../database/postgres'
+import { createConnection } from '../../infra/postgres'
 import { CretaeUserDTO } from './CreateUserDTO'
 
 import { v4 as uuid } from 'uuid'

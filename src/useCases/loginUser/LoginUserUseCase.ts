@@ -1,5 +1,6 @@
 import { createConnection } from '../../infra/postgres'
 import { LoginUserDTO } from './LoginUserDTO'
+import { setRedis } from '../../infra/redis'
 import auth from '../../config/auth'
 
 import CryptoJS, { AES } from 'crypto-js'
@@ -32,6 +33,8 @@ export class LoginUserUseCase {
       subject: user.id,
       expiresIn
     })
+
+    await setRedis(`user-${user.id}`, JSON.stringify(user))
 
     return token
   }
